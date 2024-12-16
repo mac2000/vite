@@ -28,7 +28,7 @@ Usually, when it comes to some kind of very simple app, I am used to use
   </body>
   <script type="text/babel" data-presets="react" src="index.jsx"></script>
   <script type="text/babel">
-    ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App))
+    ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(App));
   </script>
 </html>
 ```
