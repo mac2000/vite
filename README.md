@@ -1,5 +1,14 @@
 # Vite Playground
 
+```bash
+wget https://github.com/mac2000/vite/archive/refs/heads/main.zip
+unzip main.zip
+rm -rf main.zip
+cd vite-main
+npm install
+npm start
+```
+
 Usually, when it comes to some kind of very simple app, I am used to use
 
 ```html
