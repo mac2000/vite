@@ -1,63 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
 
-/* The base layer is for things like reset rules or default styles applied to plain HTML elements. */
-@layer base {
-  h1 {
-    @apply text-2xl font-bold;
-  }
-
-  a {
-    @apply text-blue-500;
-    @apply hover:underline;
-  }
-
-  ul {
-    @apply list-disc;
-    @apply pl-10;
-  }
-
-  ol {
-    @apply list-decimal;
-    @apply pl-10;
-  }
-
-  details summary {
-    @apply cursor-pointer;
-  }
-
-  h1,
-  p,
-  ul,
-  ol,
-  table,
-  details {
-    @apply my-4;
-  }
+input,
+select {
+  @apply text-inherit bg-inherit;
 }
 
-/* The components layer is for class-based styles that you want to be able to override with utilities. */
-@layer components {
-  .table {
-    @apply border-collapse border border-primary;
-  }
-
-  .table th,
-  .table td {
-    @apply px-2 py-1 border border-primary;
-  }
-}
-
-/* The utilities layer is for small, single-purpose classes that should always take precedence over any other styles. */
-@layer utilities {
-  .text-primary {
-    @apply text-neutral-800 dark:text-neutral-100;
-  }
-  .bg-primary {
-    @apply bg-neutral-100 dark:bg-neutral-800;
-  }
-  .border-primary {
-    @apply border-neutral-800 dark:border-neutral-100;
-  }
+button {
+  @apply text-white dark:text-black
+    bg-black dark:bg-white
+    px-4 py-2
+    hover:outline-black dark:hover:outline-white
+    hover:outline-2
+    disabled:opacity-50;
 }
